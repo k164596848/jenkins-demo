@@ -1,0 +1,36 @@
+GET http://localhost:3000/posts 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjY2NTE3MzA0LCJleHAiOjE2NjY1MTczMzR9.UQrSuAiMrOcIibA-6edsDq4IsxSu5XkUvrxgUZ4FaiE
+
+
+###
+POST http://ec2-44-204-248-217.compute-1.amazonaws.com:4000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjY2MzQ2OTI0fQ.vyzidBmH2wlbi40pvFaI_p4YNzNvUuEC6m7zlhQfeuk"
+
+}
+
+###
+POST http://ec2-54-146-249-169.compute-1.amazonaws.com/login
+Content-Type: application/json
+
+{
+    "username": "Jim"
+}
+
+###
+POST https://znbp5amhvh.execute-api.us-east-1.amazonaws.com/demo/jimjwt
+Content-Type: application/json
+
+{
+    "username": "Jim"
+}
+
+### 
+POST http://localhost/login
+Content-Type: application/json
+
+{
+    "username": "Danny"
+}
